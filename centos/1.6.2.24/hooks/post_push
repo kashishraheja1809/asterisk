@@ -10,6 +10,6 @@ repoName=${IMAGE_NAME:0:tagStart-1}
 
 # Tag and push image for each additional tag
 for tag in {1.6.2.24}; do
-  docker tag $IMAGE_NAME ${repoName}:${tag}
-  docker push ${repoName}:${tag}
+  docker tag $IMAGE_NAME ${repoName}:1.6.2.24
+  docker push ${repoName}:1.6.2.24
 done
